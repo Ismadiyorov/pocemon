@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.nav{
+  background-color: #2b2d42;
+  width: 99%;
+  height: 100px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.logo{
+  width: 150px;
+  height: 70px;
+  margin-top: 13px;
+  transition: 1s;
+}
+.logo:hover{
+  height: 30px;
+  width: 110px;
+  margin-top: 30px;
+}
+
+.search{
+  width: 47%;
+  height: 70px;
+  margin: 13px;
+  float: right;
+  text-align: center;
+  font-size: 30px;
+  border: 0 solid rgb(6, 164, 243);
+  border: none;
+  border-radius: 30px;
+  background-color: #edf2f4ce;
+  color: rgb(255, 255, 255);
+}
+
+.Search{
+  width: 9%;
+  height: 70px;
+  margin: 13px;
+  float: right;
+  font-size:25px ;
+  border-radius: 20%;
+  background-color: #8d99ae;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  
+}
+.Search:hover{
+  background-color: #2b2d42;
+  color: #8d99ae;
+}
+
+.Search:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}

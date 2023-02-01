@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+
+body{
+    background:#8d99ae;
+}
+
+.maincontainer
+{
+    width: 200px;
+    height: 255px;
+    margin-left: 75px;
+    margin-top: 60px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front h2 {
+  font-family: 'Righteous', cursive;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+img
+{
+    width: 200px;
+    height: 175px;
+    border-radius: 10px;
+}
+
+.back h2
+{
+    font-family: 'Righteous', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(7, 28, 53);
+    font-size: 13px;
+}
+
+.back p
+{
+    font-family: 'Merienda', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    top: 0px;
+    font-size: 11px;
+    color: rgb(13, 13, 14);
+}
+
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    
+    width: 200px;
+    height: 255px;
+    border: 2px outset #000;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    
+    
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 255px;
+    border: 2px outset #000;
+    border-radius: 30px;
+    border: none;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform .5s linear 0s;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+  .rock {
+    background-color: rgb(92, 84, 250);
+  }
+  .ghost {
+    background-color: rgba(13, 202, 47, 0.921);
+  }
+  .electric {
+    background-color: rgb(19, 181, 251);
+  }
+  .bug {
+    background-color: #ee14c9;
+  }
+  .ice,
+  .poison {
+    background-color: #eb222f;
+  }
+  .dark,
+  .fighting,
+  .normal {
+    background-color: #f29a0d;
+  }
+  .fairy {
+    background-color: rgba(113, 75, 239, 0.863);
+  }
+  .fire {
+    background-color: #2714f5;
+  }
+  .grass {
+    background-color:#8eee8bd2;
+  }
+  .water {
+    background-color:#0095ff;
+  }
+
+  .ground{
+    background-color: #ff8000;
+  }
+ .psychic,
+  .dragon{
+    background-color: rgb(247, 247, 8);
+  }
+
+  .span{
+    font-size: 20px;
+    color:rgb(58, 255, 186)
+  }
